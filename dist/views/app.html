@@ -1,5 +1,31 @@
 <div>
-    <input type="text" ng-model="name" class="input-large">
-    <h2>{{testVariable}} {{name}}!</h2>
+    <!--<input type="text" ng-model="inputName" class="input-large">-->
+    <!--<h2>{{testVariable}} {{inputName}}!</h2>-->
+    <!--<div ng-mouseover="changeName()">-->
+        <!--Hover over me!-->
+    <!--</div>-->
+    <h1>TECHNIFIEDS</h1>
+
+
+    <div class="tabbable">
+        <ul class="nav nav-tabs">
+            <li ng-repeat="category in categories" ng-class="{active:category.selected}">
+                <a href="" ng-mouseover="select(category)">{{category.title}}</a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div>
+                <ul>
+                    <li ng-repeat="subcategory in subcategories">
+                        {{subcategory.title}}
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    {{name.name}}
+
 
 </div>

@@ -1,10 +1,22 @@
 'use strict';
 
 angular.module('sandbox.app').
-    controller('MainCtrl', ['$scope',
-        function ($scope) {
-            $scope.inputName = "";
-            $scope.testVariable = "Hello, ";
+    controller('MainCtrl', ['$scope', 'Categories',
+        function ($scope, Categories) {
+
+            Categories.queryCategories().then(function(result){
+                $scope.categories = result.data;
+                $scope.categories[0].selected = true;
+                $scope.subcategories = $scope.categories[0].subcategories;
+            });
+
+            $scope.select = function selectCategory(_category) {
+                angular.forEach($scope.categories, function(category) {
+                    category.selected = false;
+                });
+                _category.selected = true;
+                $scope.subcategories = _category.subcategories;
+            };
         }])
 
     .controller('AppCtrl', ['$scope', '$rootScope', function ($scope, $rootScope) {

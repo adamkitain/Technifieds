@@ -1,1 +1,1 @@
-angular.bootstrap(document, ['sandbox.app']);
+angular.bootstrap(document, ['sandbox.app.dev']);
