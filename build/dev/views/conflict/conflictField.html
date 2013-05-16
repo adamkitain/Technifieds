@@ -1,0 +1,11 @@
+<div class="control-group" ng-class="compare(selected, conflicted)">
+    <label class="control-label">
+        {{label}}
+    </label>
+
+    <div class="controls">
+        <input type="text" class="input-xlarge" ng-model="selected">
+        <span class="help-inline">{{conflicted}}</span>
+        <div class="help-inline" ng-show="link"><a href="{{link}}" target="_blank">Open Link</a></div>
+    </div>
+</div>

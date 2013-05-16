@@ -1,0 +1,142 @@
+@import "compass_twitter_bootstrap";
+@import "compass_twitter_bootstrap_responsive";
+@import "login";
+
+* {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+$overviewControlsHeight: 110px;
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding: 20px;
+
+  .sidebar-wrap {
+    height: 100%;
+    overflow: auto;
+  }
+  .alert {
+    cursor: pointer;
+  }
+}
+
+.conflict-well {
+  .controls {
+    margin-left: 25px !important;
+  }
+}
+
+.overview {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+
+  .tab-content {
+    position: absolute;
+    top: 55px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
+  }
+
+  .overview-controls {
+    position:relative;
+    height: $overviewControlsHeight;
+
+    form {
+      margin-right: 40px;
+    }
+
+    i {
+      padding: 5px 20px;
+    }
+  }
+
+  .overview-container {
+    position: absolute;
+    top: $overviewControlsHeight;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: auto;
+    padding: 25px 25px 0px 0px;
+  }
+
+  .table-hover {
+    .overview-table-clickable {
+      cursor:pointer;
+      max-width: 100px;
+    }
+
+    .bold {
+      font-weight: bold;
+    }
+  }
+
+  .progress {
+    margin-bottom: 0 !important;
+  }
+}
+
+.conflict-well {
+  .control-group {
+    .control-label {
+      width: 60px;
+      text-align: left;
+    }
+
+    .controls {
+      margin-left: 60px;
+
+    }
+  }
+}
+
+.icon-green {
+  color: $green;
+}
+.icon-red {
+  color: $red;
+}
+.icon-orange {
+  color: $orange;
+}
+.icon-blue {
+  color: $blue;
+}
+
+.content-wrap {
+  position: absolute;
+  top: 55px;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar, ::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+  @include border-radius(5px);
+}
+
+::-webkit-scrollbar-thumb, ::-webkit-scrollbar-thumb {
+  background-color: darken($grayLight, 20%);
+  @include border-radius(5px);
+  @include box-shadow(rgba(0, 0, 0, 0.05) -1px 0 7px inset);
+}
+
+::-webkit-scrollbar-track-piece, ::-webkit-scrollbar-track-piece {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-corner, ::-webkit-scrollbar-corner {
+  display: none;
+}

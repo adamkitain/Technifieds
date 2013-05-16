@@ -1,0 +1,148 @@
+<div ng-controller="NewCtrl">
+
+    <!--HEADER CONTROLS BEGIN-->
+    <div class="overview-controls">
+        <div class="btn-toolbar">
+            <div class="btn-group">
+                <a tooltip="Back to List" tooltip-placement="button" class="btn btn-large" href="javascript:"
+                   ng-click="setMainView('main')">
+                    <i class="icon-list"></i>
+                </a>
+            </div>
+
+            <div class="btn-group">
+                <a tooltip="Save to Stage" tooltip-placement="button" class="btn btn-large btn-success"
+                   href="javascript:"
+                   ng-click="save(selectedProperty)">
+                    <i class="icon-ok-sign"></i>
+                </a>
+            </div>
+            <!--GENERAL INFORMATION BEGIN-->
+            <div class="page-header"><h4>OK Property - <em>{{selectedProperty.data.title}} ({{selectedProperty.getPercentComplete()}}%)</em> <i class="icon-tag icon-blue"></i></h4></div>
+        </div>
+    </div>
+    <!--HEADER CONTROLS END-->
+
+    <div class="overview-container">
+
+        <form class="form-horizontal">
+
+            <input-field model="selectedProperty.data.title" label="Title"></input-field>
+            <input-field model="selectedProperty.data.site" label="Site" link="selectedProperty.data.site"></input-field>
+            <input-field model="selectedProperty.data.broker" label="Broker"></input-field>
+            <input-field model="selectedProperty.data.numUnits" label="# Units"></input-field>
+            <input-field model="selectedProperty.data.yearBuilt" label="Year Built"></input-field>
+            <input-field model="selectedProperty.data.flyer" label="Flyer Link"></input-field>
+            <input-paragraph model="selectedProperty.data.description" label="Description"></input-paragraph>
+            <input-date model="selectedProperty.data.callForOffers" label="Call for offers"></input-date>
+            <input-select model="selectedProperty.data.propertyStatus" options="propertyStatuses" label="Property Status"></input-select>
+            <!--GENERAL INFORMATION END-->
+
+            <!--ADDRESS INFORMATION BEGIN-->
+            <div class="page-header"><h5>Address</h5></div>
+            <input-field model="selectedProperty.data.address.street1" label="Street 1"></input-field>
+            <input-field model="selectedProperty.data.address.street2" label="Street 2"></input-field>
+            <input-field model="selectedProperty.data.address.city" label="City"></input-field>
+            <input-field model="selectedProperty.data.address.state" label="State"></input-field>
+            <input-field model="selectedProperty.data.address.zip" label="Zip"></input-field>
+            <!--ADDRESS END-->
+
+            <!--PROPERTY TOUR DATES BEGIN-->
+            <div class="page-header"><h5>Tour Dates</h5></div>
+            <div class="row-fluid" ng-repeat="tourDate in selectedProperty.data.tourDates">
+                <!--Raw Contacts-->
+                <div class="well span6 conflict-well">
+                    <a href="javascript:" ng-click="selectedProperty.removeTourDate(tourDate._id)" class="close">&times;</a>
+                    <div class="controls">
+                        <input-date model="tourDate.date" label="Date"></input-date>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-group">
+                <a class="btn btn-large btn-success"
+                   ng-click="createNewTourDate(selectedProperty)">
+                    <i class="icon-plus"></i><span>New Tour Date</span>
+                </a>
+            </div>
+            <!--PROPERTY TOUR DATES END-->
+
+            <!--CONTACTS BEGIN-->
+            <div class="page-header"><h5>Contacts</h5></div>
+            <div class="row-fluid" ng-repeat="contact in selectedProperty.data.contacts">
+                <!--Raw Contacts-->
+                <div class="well span6 conflict-well">
+                    <a href="javascript:" ng-click="selectedProperty.removeContact(contact._id)" class="close">&times;</a>
+                    <div class="controls">
+                        <input-field model="contact.name" label="Name"></input-field>
+                        <input-field model="contact.email" label="Email"></input-field>
+                        <input-field model="contact.phone" label="Phone"></input-field>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-group">
+                <a class="btn btn-large btn-success"
+                   ng-click="createNewContact(selectedProperty)">
+                    <i class="icon-plus"></i><span>New Contact</span>
+                </a>
+            </div>
+            <!--CONTACTS END-->
+            <div class="page-header"><h5>Images</h5></div>
+            <div class="row-fluid">
+                <div class="span6">
+                    <input-field model="selectedProperty.data.thumbnail" label="Thumbnail"></input-field>
+                </div>
+                <div class="span5 offset1">
+                    <img ng-src="{{selectedProperty.data.thumbnail}}" alt=""/>
+                </div>
+            </div>
+            <div class="row-fluid" ng-repeat="image in selectedProperty.data.images">
+                <!--Raw Images-->
+                <form class="form-horizontal">
+                    <div class="well span6 conflict-well">
+                        <a href="javascript:" ng-click="selectedProperty.removeImage(image._id)" class="close">&times;</a>
+                        <div class="controls">
+                            <input-field model="image.link" label="Link"></input-field>
+                        </div>
+                    </div>
+                    <div class="span5 offset1"><img ng-src="{{image.link}}" alt=""/></div>
+                </form>
+            </div>
+            <div class="btn-group">
+                <a class="btn btn-large btn-success"
+                   ng-click="createNewImage(selectedProperty)">
+                    <i class="icon-plus"></i><span>New Image</span>
+                </a>
+            </div>
+
+            <!--Unit Mix BEGIN-->
+            <div class="page-header"><h5>Unit Mix</h5></div>
+
+            <div class="row-fluid" ng-repeat="unit in selectedProperty.data.unitMix">
+                <form class="form-horizontal">
+                    <div class="well span6 conflict-well">
+                        <a href="javascript:" ng-click="selectedProperty.removeUnitMix(unit._id)" class="close">&times;</a>
+                        <div class="controls">
+                            <input-select model="unit.type" label="Type" options="unitMixTypes"></input-select>
+                            <input-field model="unit.units" label="Units"></input-field>
+                            <input-field model="unit.sqft" label="Sq Ft"></input-field>
+                            <input-field model="unit.rent" label="Rent"></input-field>
+                            <input-field model="unit.calculateRentpsqft()" label="r/sqft" disabled="true"></input-field>
+                        </div>
+                    </div>
+                    <div class="span5 offset1"><img ng-src="{{image.link}}" alt=""/></div>
+                </form>
+            </div>
+
+
+            <div class="btn-group">
+                <a class="btn btn-large btn-success"
+                   ng-click="createNewUnitMix(selectedProperty)">
+                    <i class="icon-plus"></i><span>New Unit</span>
+                </a>
+            </div>
+
+
+        </form>
+    </div>
+
+</div>

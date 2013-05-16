@@ -1,0 +1,147 @@
+<div ng-controller="ConflictCtrl">
+
+    <!--HEADER CONTROLS BEGIN-->
+    <div class="overview-controls">
+        <div class="btn-toolbar">
+            <div class="btn-group">
+                <a tooltip="Back to List" tooltip-placement="button" class="btn btn-large" href="javascript:" ng-click="setMainView('main')">
+                    <i class="icon-list"></i>
+                </a>
+            </div>
+
+            <div class="btn-group">
+                <a tooltip="Send to Remove" tooltip-placement="button" class="btn btn-large btn-danger"
+                   href="javascript:" disabled>
+                    <i class="icon-minus-sign"></i>
+                </a>
+            </div>
+
+            <div class="btn-group">
+                <a tooltip="Save to Stage" tooltip-placement="button" class="btn btn-large btn-success" href="javascript:"
+                   ng-click="save(selectedProperty)">
+                    <i class="icon-ok-sign"></i>
+                </a>
+            </div>
+            <div class="page-header"><h4>Conflict Property - <em>{{selectedProperty.data.title}} ({{selectedProperty.getPercentComplete()}}%)</em> <i class="icon-tag icon-orange"></i></h4></div>
+        </div>
+    </div>
+    <!--HEADER CONTROLS END-->
+
+
+    <div class="overview-container">
+        <form class="form-horizontal">
+            <div conflict-field selected="selectedProperty.data.title"
+                 conflicted="conflictProperty.data.title"
+                 label="Title"></div>
+            <div conflict-field selected="selectedProperty.data.site"
+                 conflicted="conflictProperty.data.site"
+                 label="Site" link="selectedProperty.data.site"></div>
+            <div conflict-field selected="selectedProperty.data.broker"
+                 conflicted="conflictProperty.data.broker"
+                 label="Broker"></div>
+            <div conflict-field selected="selectedProperty.data.numUnits"
+                 conflicted="conflictProperty.data.numUnits"
+                 label="Units"></div>
+            <div conflict-field selected="selectedProperty.data.yearBuilt"
+                 conflicted="conflictProperty.data.yearBuilt"
+                 label="Year Built"></div>
+            <div conflict-paragraph selected="selectedProperty.data.description"
+                 conflicted="conflictProperty.data.description"
+                 label="Description"></div>
+            <input-date model="selectedProperty.data.callForOffers" label="Call for offers"></input-date>
+            <input-select model="selectedProperty.data.propertyStatus" options="propertyStatuses" label="Property Status"></input-select>
+
+
+            <div class="page-header"><h5>Address</h5></div>
+            <div conflict-field selected="selectedProperty.data.address.street1"
+                 conflicted="conflictProperty.data.address.street1" label="Street 1"></div>
+            <div conflict-field selected="selectedProperty.data.address.street2"
+                 conflicted="conflictProperty.data.address.street2" label="Street 2"></div>
+            <div conflict-field selected="selectedProperty.data.address.city"
+                 conflicted="conflictProperty.data.address.city" label="City"></div>
+            <div conflict-field selected="selectedProperty.data.address.state"
+                 conflicted="conflictProperty.data.address.state" label="State"></div>
+            <div conflict-field selected="selectedProperty.data.address.zip"
+                 conflicted="conflictProperty.data.address.zip" label="Zip"></div>
+
+            <!--PROPERTY TOUR DATES BEGIN-->
+            <div class="page-header"><h5>Tour Dates</h5></div>
+            <div class="row-fluid" ng-repeat="tourDate in selectedProperty.data.tourDates">
+                <!--Raw Contacts-->
+                <div class="well span6 conflict-well">
+                    <a href="javascript:" ng-click="selectedProperty.removeTourDate(tourDate._id)" class="close">&times;</a>
+                    <div class="controls">
+                        <input-date model="tourDate.date" label="Date"></input-date>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-group">
+                <a class="btn btn-large btn-success"
+                   ng-click="createNewTourDate(selectedProperty)">
+                    <i class="icon-plus"></i><span>New Tour Date</span>
+                </a>
+            </div>
+            <!--PROPERTY TOUR DATES END-->
+
+            <div class="page-header"><h5>Contacts</h5></div>
+
+            <div class="row-fluid" ng-repeat="id in selectedProperty.unionContacts(conflictProperty.data.contacts)">
+                <!--Raw Contacts-->
+                <div conflict-model-row
+                     conflict-property="conflictProperty"
+                     selected-property="selectedProperty"
+                     conflict-model="conflictProperty.getContact(id)"
+                     selected-model="selectedProperty.getContact(id)">
+                </div>
+            </div>
+            <div class="btn-group">
+                <a class="btn btn-large btn-success"
+                   ng-click="createNewContact(selectedProperty)">
+                    <i class="icon-plus"></i><span>New Contact</span>
+                </a>
+            </div>
+
+            <!--IMAGES BEGIN-->
+            <div class="page-header"><h5>Images</h5></div>
+            <div class="row-fluid" ng-repeat="id in selectedProperty.unionImages(conflictProperty.data.images)">
+                <!--Raw Images-->
+                <div conflict-model-row
+                     conflict-property="conflictProperty"
+                     selected-property="selectedProperty"
+                     conflict-model="conflictProperty.getImage(id)"
+                     selected-model="selectedProperty.getImage(id)">
+                </div>
+            </div>
+
+            <div class="btn-group">
+                <a class="btn btn-large btn-success"
+                   ng-click="createNewImage(selectedProperty)">
+                    <i class="icon-plus"></i><span>New Image</span>
+                </a>
+            </div>
+            <!--IMAGES END-->
+
+            <!--UNIT MIX BEGIN-->
+            <div class="page-header"><h5>Images</h5></div>
+            <div class="row-fluid" ng-repeat="unit in selectedProperty.unionUnitMix(conflictProperty.data.unitMix)">
+                <!--Raw Images-->
+                <div conflict-model-row
+                     conflict-property="conflictProperty"
+                     selected-property="selectedProperty"
+                     conflict-model="conflictProperty.getUnitMix(id)"
+                     selected-model="selectedProperty.getUnitMix(id)">
+                </div>
+            </div>
+
+            <div class="btn-group">
+                <a class="btn btn-large btn-success"
+                   ng-click="createNewUnitMix(selectedProperty)">
+                    <i class="icon-plus"></i><span>New Unit</span>
+                </a>
+            </div>
+            <!--UNIT MIX END-->
+
+
+        </form>
+    </div>
+</div>

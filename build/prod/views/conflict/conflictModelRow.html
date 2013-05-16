@@ -1,0 +1,41 @@
+<div class="well conflict-well span5">
+    <div ng-show="selectedModel">
+        <a href="javascript:" ng-click="remove()" class="close">&times;</a>
+
+        <div class="controls">
+            <div ng-repeat="key in getKeys(selectedModel)">
+                <div class="control-group" ng-class="compare(selectedModel[key], conflictModel[key])">
+                    <label class="control-label">
+                        {{key}}
+                    </label>
+
+                    <div class="controls">
+                        <input class="input-xlarge" type="text" ng-model="selectedModel[key]">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div ng-show="!selectedModel">
+        <a class="btn btn-large btn-success" ng-click="copyModelFromConflicted()"><i
+                class="icon-plus"></i><span>Add</span></a>
+    </div>
+</div>
+
+
+<div class="well conflict-well span5" ng-show="conflictModel">
+    <div class="controls">
+        <div ng-repeat="key in getKeys(conflictModel)">
+            <div class="control-group">
+                <label class="control-label">
+                    {{key}}
+                </label>
+
+                <div class="controls">
+                    <input disabled type="text" ng-model="conflictModel[key]">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

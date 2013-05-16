@@ -1,0 +1,27 @@
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="container-fluid">
+            <a href="/" class="brand">rescour</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid content-wrap" xmlns="http://www.w3.org/1999/html">
+    <div class="row-fluid">
+        <div class="span2 sidebar">
+            <div class="sidebar-wrap">
+
+                <ul class="nav nav-list">
+                    <li class="nav-header">Filter by Tag</li>
+                    <li ng-repeat="tag in tags" ng-class="{'active': tag.selected}" ng-click="toggleTag(tag)"><a
+                            href="javascript:">{{tag.tag}}</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="span10 overview">
+            <div ng-include="mainView"></div>
+        </div>
+    </div>
+</div>

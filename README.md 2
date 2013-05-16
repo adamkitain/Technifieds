@@ -1,0 +1,77 @@
+Scraper
+===============
+Front-end code should be worked on in the /app directory.
+
+#API:
+
+* POST /api/auth/login/ to log in
+* GET /api/auth/logout to log out
+* GET /api/auth/check to check for authentication
+* GET /api/properties/ to get all properties.
+* POST /api/properties/ to create a new property
+* PUT /api/properties/:id to save a property to the stage
+* DELETE /api/properties/:id to delete a property from the stage
+* POST /api/deploy to deply checked properties to production
+
+#Assumptions:
+* **Raw Conflicts:** The 'raw' property is used to signify the difference between Conflict objects in the data set.  Conflicts are assumed to have a match on _id with the raw field set to the opposite.  Conflicts with {raw: false} are edited, compared against {raw: true} Properties.
+* **Models:** Contacts and Images are said to be "models" for abstraction purposes.  They are required to have an _id that is the hash of their contents, which is used in order to compare Conflict data.
+
+
+Data:  
+```JavaScript
+{  
+  tag: String,
+  raw: Boolean,
+  data: {  
+    _id: String,
+    _checksum: String,
+    _temp: Boolean,
+    _deployed: Boolean,
+    modified: Date,
+    site: String,   
+    title: String,  
+    broker: String,  
+    address: {
+      street1: String,
+      street2: String,
+      city: String,
+      state: String
+      zip: String
+    }
+    numUnits: String,  
+    yearBuilt: String,  
+    description: String,
+    callForOffers: String,
+    propertyStatus: String,
+    thumbnail: String,
+    flyer: String,
+    unitMix: [{
+      type: String,
+      units: String,
+      sqft: String,
+      rent: String,
+      rentpsqft: String
+    }],
+    contacts: [{
+      _id: String,
+      _checksum: String,
+      name: String,
+      phone: String,
+      email: String
+    }],  
+    images: [{
+      _id: String,
+      _checksum: String,
+      link: String,
+      caption: String
+    }],
+    tourDates: [{
+      date: String
+    }],
+    portfolio: [{
+      title: String
+    }]
+  }  
+}  
+```

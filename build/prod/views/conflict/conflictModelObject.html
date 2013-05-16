@@ -1,0 +1,11 @@
+<div ng-repeat="key in conflictKeys">
+    <div class="control-group" ng-class="compare(selectedModel[key], conflictModel[key])">
+        <label class="control-label">
+            {{key}}
+        </label>
+
+        <div class="controls">
+            <input type="text" ng-model="selectedModel[key]">
+        </div>
+    </div>
+</div>
