@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('sandbox.app')
+angular.module('technifieds.app')
     .factory('Categories', ['$q', '$_api', '$http', 'Alerts', function ($q, $_api, $http, Alerts) {
         var categories = [];
 
@@ -22,25 +22,6 @@ angular.module('sandbox.app')
                 $http.get(path, config).then(
                     function (response) {
                         Alerts.clear();
-                        defer.resolve(response);
-                    },
-                    function (response) {
-                        defer.reject();
-                    }
-                );
-                return defer.promise;
-            },
-            queryName: function () {
-                var defer = $q.defer(),
-                    path = $_api.path + '/api/categories2/',
-                    config = angular.extend({
-                        transformRequest: function (data) {
-                            return data;
-                        }
-                    }, $_api.config);
-
-                $http.get(path, config).then(
-                    function (response) {
                         defer.resolve(response);
                     },
                     function (response) {

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('sandbox.app')
+angular.module('technifieds.app')
     .directive('conflictField', function () {
         return {
             restrict: 'A',

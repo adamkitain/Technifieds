@@ -1,13 +1,13 @@
 'use strict';
 
-angular.module('sandbox.app').
+angular.module('technifieds.app').
     controller('MainCtrl', ['$scope', 'Categories',
         function ($scope, Categories) {
 
             Categories.queryCategories().then(function(result){
                 $scope.categories = result.data;
                 $scope.categories[0].selected = true;
-                $scope.subcategories = $scope.categories[0].subcategories;
+                $scope.category = $scope.categories[0];
             });
 
             $scope.select = function selectCategory(_category) {
@@ -15,8 +15,14 @@ angular.module('sandbox.app').
                     category.selected = false;
                 });
                 _category.selected = true;
-                $scope.subcategories = _category.subcategories;
+                $scope.category = _category;
             };
+        }])
+    .controller('ListCtrl', ['$scope',
+        function($scope){
+
+
+
         }])
 
     .controller('AppCtrl', ['$scope', '$rootScope', function ($scope, $rootScope) {

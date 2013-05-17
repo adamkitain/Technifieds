@@ -1,52 +1,126 @@
 'use strict';
 
-angular.module('sandbox.app.dev', ['sandbox.app', 'ngMockE2E'])
+angular.module('technifieds.app.dev', ['technifieds.app', 'ngMockE2E'])
     .run(['$httpBackend', function ($httpBackend) {
 
     var categories = [
         {
             title:"Academics",
+            path:"academics",
             subcategories:[
-                {title:"Textbooks", fields:{} },
-                {title:"Class Materials", fields:{} },
-                {title:"Tutoring", fields:{} },
-                {title:"Research", fields:{} }
+                {title:"Textbooks", path:"textbooks", fields:{} },
+                {title:"Class Materials", path:"classmaterials", fields:{} },
+                {title:"Tutoring", path:"tutoring", fields:{} },
+                {title:"Research", path:"research", fields:{} }
             ]
         },
         {
             title:"Home & Dorm",
+            path:"homeanddorm",
             subcategories:[
-                {title:"Furniture", fields:{} },
-                {title:"Electronics", fields:{} },
-                {title:"Subleasing", fields:{} },
-                {title:"Services", fields:{} }
+                {title:"Furniture", path:"furniture", fields:{} },
+                {title:"Electronics", path:"electronics", fields:{} },
+                {title:"Subleasing", path:"sublease", fields:{} },
+                {title:"Services", path:"services", fields:{} }
             ]
         },
         {
             title:"Personals",
+            path:"personals",
             subcategories:[
-                {title:"Services", fields:{} },
-                {title:"asdf", fields:{} },
-                {title:"asdf", fields:{} },
-                {title:"asf", fields:{} }
+                {title:"Services", path:"services", fields:{} },
+                {title:"asdf", path:"asdf", fields:{} },
+                {title:"fdsf", path:"fdsf", fields:{} },
+                {title:"Something", path:"something", fields:{} }
             ]
         },
         {
             title:"Locals",
+            path:"locals",
             subcategories:[
-                {title:"Deals", fields:{} },
-                {title:"Part-time Jobs", fields:{} },
-                {title:"Events", fields:{} },
-                {title:"Something", fields:{} }
+                {title:"Deals", path:"deals", fields:{} },
+                {title:"Part-time Jobs", path:"jobs", fields:{} },
+                {title:"Events", path:"events", fields:{} },
+                {title:"Something", path:"something", fields:{} }
             ]
         }
     ];
 
+    var postings = {
+        academics: {
+            textbooks: [
+                {title: "Calculus Textbook - Like NEW", name: "McGraw Henry Calculus Edition 3", price: 35, description: "I used this book briefly for CALC 1502. No marks or damages, the book is like new", imgURL: "http://www.math.missouri.edu/courses/math1700/math1700.jpg", datePosted: "05/13/2013", userID: "ACC32442B5"},
+                {title: "Calculus Textbook - Like NEW", name: "McGraw Henry Calculus Edition 3", price: 35, description: "I used this book briefly for CALC 1502. No marks or damages, the book is like new", imgURL: "http://www.math.missouri.edu/courses/math1700/math1700.jpg", datePosted: "05/13/2013", userID: "ACC32442B5"},
+                {title: "Calculus Textbook - Like NEW", name: "McGraw Henry Calculus Edition 3", price: 35, description: "I used this book briefly for CALC 1502. No marks or damages, the book is like new", imgURL: "http://www.math.missouri.edu/courses/math1700/math1700.jpg", datePosted: "05/13/2013", userID: "ACC32442B5"},
+                {title: "Calculus Textbook - Like NEW", name: "McGraw Henry Calculus Edition 3", price: 35, description: "I used this book briefly for CALC 1502. No marks or damages, the book is like new", imgURL: "http://www.math.missouri.edu/courses/math1700/math1700.jpg", datePosted: "05/13/2013", userID: "ACC32442B5"},
+                {title: "Calculus Textbook - Like NEW", name: "McGraw Henry Calculus Edition 3", price: 35, description: "I used this book briefly for CALC 1502. No marks or damages, the book is like new", imgURL: "http://www.math.missouri.edu/courses/math1700/math1700.jpg", datePosted: "05/13/2013", userID: "ACC32442B5"},
+                {title: "Calculus Textbook - Like NEW", name: "McGraw Henry Calculus Edition 3", price: 35, description: "I used this book briefly for CALC 1502. No marks or damages, the book is like new", imgURL: "http://www.math.missouri.edu/courses/math1700/math1700.jpg", datePosted: "05/13/2013", userID: "ACC32442B5"},
+                {title: "Calculus Textbook - Like NEW", name: "McGraw Henry Calculus Edition 3", price: 35, description: "I used this book briefly for CALC 1502. No marks or damages, the book is like new", imgURL: "http://www.math.missouri.edu/courses/math1700/math1700.jpg", datePosted: "05/13/2013", userID: "ACC32442B5"}
+
+            ],
+            classmaterials: [
+
+            ],
+            tutoring: [
+
+            ],
+            research: [
+
+            ]
+        },
+        homeanddorm: {
+            furniture: [
+
+            ],
+            electronics: [
+
+            ],
+            sublease: [
+
+            ],
+            services: [
+
+            ]
+        },
+        personals: {
+            services: [
+
+            ],
+            asdf: [
+
+            ],
+            fdsf: [
+
+            ],
+            something: [
+
+            ]
+        },
+        locals: {
+            deals: [
+
+            ],
+            jobs: [
+
+            ],
+            events: [
+
+            ],
+            something: [
+
+            ]
+        }
+    };
+
 
     $httpBackend.whenGET('/api/categories/').respond(categories);
-    $httpBackend.whenGET('/api/categories2/').respond({name: "Adam"});
+    $httpBackend.whenGET(/\/api\/categories\/[a-z].*\/[a-z].*/).respond(function(method, url, data){
+        var pieces = url.split('/'),
+            category = pieces[3],
+            subcategory = pieces[4];
+        return postings[category][subcategory];
 
-
+    });
 
     $httpBackend.whenGET(/^\/views\//).passThrough();
     $httpBackend.whenGET(/^template\//).passThrough();
