@@ -49,13 +49,13 @@ angular.module('technifieds.app.dev', ['technifieds.app', 'ngMockE2E'])
     var postings = {
         academics: {
             textbooks: [
-                {title: "Calculus Textbook - Like NEW", name: "McGraw Henry Calculus Edition 3", price: 35, description: "I used this book briefly for CALC 1502. No marks or damages, the book is like new", imgURL: "http://www.math.missouri.edu/courses/math1700/math1700.jpg", datePosted: "05/13/2013", userID: "ACC32442B5"},
-                {title: "Calculus Textbook - Like NEW", name: "McGraw Henry Calculus Edition 3", price: 35, description: "I used this book briefly for CALC 1502. No marks or damages, the book is like new", imgURL: "http://www.math.missouri.edu/courses/math1700/math1700.jpg", datePosted: "05/13/2013", userID: "ACC32442B5"},
-                {title: "Calculus Textbook - Like NEW", name: "McGraw Henry Calculus Edition 3", price: 35, description: "I used this book briefly for CALC 1502. No marks or damages, the book is like new", imgURL: "http://www.math.missouri.edu/courses/math1700/math1700.jpg", datePosted: "05/13/2013", userID: "ACC32442B5"},
-                {title: "Calculus Textbook - Like NEW", name: "McGraw Henry Calculus Edition 3", price: 35, description: "I used this book briefly for CALC 1502. No marks or damages, the book is like new", imgURL: "http://www.math.missouri.edu/courses/math1700/math1700.jpg", datePosted: "05/13/2013", userID: "ACC32442B5"},
-                {title: "Calculus Textbook - Like NEW", name: "McGraw Henry Calculus Edition 3", price: 35, description: "I used this book briefly for CALC 1502. No marks or damages, the book is like new", imgURL: "http://www.math.missouri.edu/courses/math1700/math1700.jpg", datePosted: "05/13/2013", userID: "ACC32442B5"},
-                {title: "Calculus Textbook - Like NEW", name: "McGraw Henry Calculus Edition 3", price: 35, description: "I used this book briefly for CALC 1502. No marks or damages, the book is like new", imgURL: "http://www.math.missouri.edu/courses/math1700/math1700.jpg", datePosted: "05/13/2013", userID: "ACC32442B5"},
-                {title: "Calculus Textbook - Like NEW", name: "McGraw Henry Calculus Edition 3", price: 35, description: "I used this book briefly for CALC 1502. No marks or damages, the book is like new", imgURL: "http://www.math.missouri.edu/courses/math1700/math1700.jpg", datePosted: "05/13/2013", userID: "ACC32442B5"}
+                {_id:0, title: "Calculus Textbook - Like NEW", name: "McGraw Henry Calculus Edition 3", price: 35, description: "I used this book briefly for CALC 1502. No marks or damages, the book is like new", imgURL: "http://www.math.missouri.edu/courses/math1700/math1700.jpg", datePosted: "05/13/2013", userID: "ACC32442B5"},
+                {_id:1, title: "Different book", name: "McGraw Henry Calculus Edition 3", price: 35, description: "I used this book briefly for CALC 1502. No marks or damages, the book is like new", imgURL: "http://www.math.missouri.edu/courses/math1700/math1700.jpg", datePosted: "05/13/2013", userID: "ACC32442B5"},
+                {_id:2, title: "English Textbook", name: "McGraw Henry Calculus Edition 3", price: 35, description: "I used this book briefly for CALC 1502. No marks or damages, the book is like new", imgURL: "http://www.math.missouri.edu/courses/math1700/math1700.jpg", datePosted: "05/13/2013", userID: "ACC32442B5"},
+                {_id:3, title: "Calculus Textbook - Like NEW", name: "McGraw Henry Calculus Edition 3", price: 35, description: "I used this book briefly for CALC 1502. No marks or damages, the book is like new", imgURL: "http://www.math.missouri.edu/courses/math1700/math1700.jpg", datePosted: "05/13/2013", userID: "ACC32442B5"},
+                {_id:4, title: "Calculus Textbook - Like NEW", name: "McGraw Henry Calculus Edition 3", price: 35, description: "I used this book briefly for CALC 1502. No marks or damages, the book is like new", imgURL: "http://www.math.missouri.edu/courses/math1700/math1700.jpg", datePosted: "05/13/2013", userID: "ACC32442B5"},
+                {_id:5, title: "Calculus Textbook - Like NEW", name: "McGraw Henry Calculus Edition 3", price: 35, description: "I used this book briefly for CALC 1502. No marks or damages, the book is like new", imgURL: "http://www.math.missouri.edu/courses/math1700/math1700.jpg", datePosted: "05/13/2013", userID: "ACC32442B5"},
+                {_id:6, title: "Calculus Textbook - Like NEW", name: "McGraw Henry Calculus Edition 3", price: 35, description: "I used this book briefly for CALC 1502. No marks or damages, the book is like new", imgURL: "http://www.math.missouri.edu/courses/math1700/math1700.jpg", datePosted: "05/13/2013", userID: "ACC32442B5"}
 
             ],
             classmaterials: [
@@ -118,7 +118,7 @@ angular.module('technifieds.app.dev', ['technifieds.app', 'ngMockE2E'])
         var pieces = url.split('/'),
             category = pieces[3],
             subcategory = pieces[4];
-        return postings[category][subcategory];
+        return [200, postings[category][subcategory], {}];
 
     });
 

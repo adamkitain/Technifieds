@@ -16,7 +16,7 @@ angular.module('technifieds.app')
             })
                 .when('/:category/:subcategory', {
                 templateUrl: '/views/app.html',
-                controller: 'MainCtrl'
+                controller: 'ListCtrl'
             });
         }])
     .factory('Interceptor', ['$q', '$rootScope', '$timeout',

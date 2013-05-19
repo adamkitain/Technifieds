@@ -1,36 +1,60 @@
 'use strict';
 
 angular.module('technifieds.app')
-    .factory('Categories', ['$q', '$_api', '$http', 'Alerts', function ($q, $_api, $http, Alerts) {
+//    .factory('Posting', ['Categories', '$q', '$_api', '$http', function (Categories, $q, $_api, $http) {
+//            var Posting = function (post){
+//                this._id = post._id;
+//            };
+//
+//            return Posting;
+//        }])
+    .factory('Categories', ['$q', '$_api', '$http', function ($q, $_api, $http) {
         var categories = [];
+        var Categories = {};
 
-        return {
-            queryCategories: function () {
-                var defer = $q.defer(),
-                    self = this,
-                    path = $_api.path + '/api/categories/',
-                    config = angular.extend({
-                        transformRequest: function (data) {
-                            Alerts.setAlert({
-                                type: 'info',
-                                msg: 'Loading properties...'
-                            });
-                            return data;
-                        }
-                    }, $_api.config);
-
-                $http.get(path, config).then(
-                    function (response) {
-                        Alerts.clear();
-                        defer.resolve(response);
-                    },
-                    function (response) {
-                        defer.reject();
+        Categories.queryCategories = function () {
+            var defer = $q.defer(),
+                self = this,
+                path = $_api.path + '/api/categories/',
+                config = angular.extend({
+                    transformRequest: function (data) {
+                        return data;
                     }
-                );
-                return defer.promise;
-            }
+                }, $_api.config);
+
+            $http.get(path, config).then(
+                function (response) {
+                    defer.resolve(response);
+                },
+                function (response) {
+                    defer.reject();
+                }
+            );
+            return defer.promise;
         };
+
+        Categories.queryList = function (category, subcategory) {
+            var defer = $q.defer(),
+                self = this,
+                path = $_api.path + '/api/categories/' + category + '/' + subcategory,
+                config = angular.extend({
+                    transformRequest: function (data) {
+                        return data;
+                    }
+                }, $_api.config);
+
+            $http.get(path, config).then(
+                function (response) {
+                    defer.resolve(response);
+                },
+                function (response) {
+                    defer.reject();
+                }
+            );
+            return defer.promise;
+        };
+
+        return Categories;
     }])
     .factory('$_api', ['$http', function ($http) {
         var urls = {
@@ -44,21 +68,4 @@ angular.module('technifieds.app')
             },
             path: urls.local
         };
-    }])
-    .factory('Alerts', function () {
-        var alerts = [];
-        return {
-            get: function () {
-                return alerts;
-            },
-            setAlert: function (alert) {
-                alerts = [alert];
-            },
-            addAlert: function (alert) {
-                alerts.push(alert);
-            },
-            clear: function () {
-                alerts = [];
-            }
-        }
-    });
+    }]);

@@ -1,0 +1,14 @@
+<div class="container row-fluid">
+    <div class="span2">
+        <span>Home >> {{classification.category.title}} >> {{classification.subcategory.title}}</span>
+        <form>
+            <input type="text" ng-model="search.title" class="input input-medium">
+        </form>
+    </div>
+    <div class="span9"><ul>
+        <li ng-repeat="item in list | filter:search">
+            <span ng-click="selectItem(item)">{{item.title}}</span>
+
+        </li>
+    </ul></div>
+</div>
