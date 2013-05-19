@@ -17,6 +17,10 @@ angular.module('technifieds.app')
                 .when('/:category/:subcategory', {
                 templateUrl: '/views/app.html',
                 controller: 'ListCtrl'
+            })
+                .when('/:category/:subcategory/:id', {
+                templateUrl: '/views/app.html',
+                controller: 'PostingCtrl'
             });
         }])
     .factory('Interceptor', ['$q', '$rootScope', '$timeout',
