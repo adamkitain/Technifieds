@@ -1,8 +1,20 @@
 <h2>{{selectedItem.title}}</h2>
-<div>
-    <img ng-src="{{selectedItem.imgURL}}">
+<div class="row-fluid">
+    <div class="img-thum span1"><img width="60" height="60" ng-src="{{selectedItem.imgURL}}"></div>
     <table>
-        <tr>{{selectedItem.price}}</tr>
-        <tr>{{selectedItem.description}}</tr>
+        <tr>
+            <td><strong>Price</strong></td>
+            <td>{{selectedItem.price}}</td>
+        </tr>
+        <tr>
+            <td><strong>Description</strong></td>
+            <td>{{selectedItem.description}}</td>
+        </tr>
+        <tr>
+            <td><strong>User</strong></td>
+            <td>{{selectedItem.userID}}</td>
+        </tr>
     </table>
+
+    <button class="btn btn-info">Contact Seller</button>
 </div>

@@ -4,40 +4,40 @@
     <list default="true" id="a9e04aec-85aa-4999-b7ad-b895876a2023" name="Default" comment="" />
     <ignored path="app.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/fragment.js2" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1363024925117" ignored="false" />
-    <file path="/conflictModelRow.html" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1363209109782" ignored="false" />
-    <file path="/services.js" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1364406351945" ignored="false" />
-    <file path="/controllers.js" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1364335910897" ignored="false" />
-    <file path="/conflictModelField.html" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1363042231352" ignored="false" />
-    <file path="/conflictModel.html" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1363034744581" ignored="false" />
-    <file path="/conflict-field.html" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1362892679845" ignored="false" />
-    <file path="/conflictProperty.html" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1364324781344" ignored="false" />
-    <file path="/main.js" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1364332001835" ignored="false" />
-    <file path="/directives.js" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1364334161531" ignored="false" />
-    <file path="/app.html" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1364239843834" ignored="false" />
-    <file path="/dummy.xml" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1363224574350" ignored="false" />
-    <file path="/main.scss" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1363224626006" ignored="false" />
-    <file path="/app.js" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1364404359861" ignored="false" />
-    <file path="/removedProperty.html" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1364324510915" ignored="false" />
-    <file path="/okProperty.html" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1364323742708" ignored="false" />
-    <file path="/newProperty.html" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1364334135563" ignored="false" />
-    <file path="/stage.html" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1363192820315" ignored="false" />
-    <file path="/raw.html" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1364166243821" ignored="false" />
-    <file path="/_tables.scss" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1363193971504" ignored="false" />
-    <file path="/dev.js" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1364335512059" ignored="false" />
-    <file path="/_buttons.scss" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1363198433015" ignored="false" />
-    <file path="/ui-bootstrap-0.2.0.js" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1363201373339" ignored="false" />
-    <file path="/_button-groups.scss" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1363216578059" ignored="false" />
-    <file path="/inputField.html" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1363209321529" ignored="false" />
-    <file path="/inputPargraph.html" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1364324189126" ignored="false" />
-    <file path="/conflictParagraph.html" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1364324741955" ignored="false" />
-    <file path="/conflictField.html" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1364324879994" ignored="false" />
-    <file path="$PROJECT_DIR$/../component.json" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1364330986587" ignored="false" />
-    <file path="$PROJECT_DIR$/../dist/scripts/controllers.js" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1364332015326" ignored="false" />
-    <file path="/angular-ui.js" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1364331967345" ignored="false" />
-    <file path="/index.template" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1364332057769" ignored="false" />
-    <file path="/inputDate.html" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1364332475172" ignored="false" />
     <file path="/inputSelect.html" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1364334092602" ignored="false" />
+    <file path="/inputDate.html" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1364332475172" ignored="false" />
+    <file path="/index.template" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1364332057769" ignored="false" />
+    <file path="/angular-ui.js" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1364331967345" ignored="false" />
+    <file path="$PROJECT_DIR$/../dist/scripts/controllers.js" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1364332015326" ignored="false" />
+    <file path="$PROJECT_DIR$/../component.json" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1364330986587" ignored="false" />
+    <file path="/conflictField.html" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1364324879994" ignored="false" />
+    <file path="/conflictParagraph.html" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1364324741955" ignored="false" />
+    <file path="/inputPargraph.html" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1364324189126" ignored="false" />
+    <file path="/inputField.html" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1363209321529" ignored="false" />
+    <file path="/_button-groups.scss" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1363216578059" ignored="false" />
+    <file path="/ui-bootstrap-0.2.0.js" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1363201373339" ignored="false" />
+    <file path="/_buttons.scss" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1363198433015" ignored="false" />
+    <file path="/dev.js" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1364335512059" ignored="false" />
+    <file path="/_tables.scss" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1363193971504" ignored="false" />
+    <file path="/raw.html" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1364166243821" ignored="false" />
+    <file path="/stage.html" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1363192820315" ignored="false" />
+    <file path="/newProperty.html" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1364334135563" ignored="false" />
+    <file path="/okProperty.html" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1364323742708" ignored="false" />
+    <file path="/removedProperty.html" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1364324510915" ignored="false" />
+    <file path="/app.js" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1364404359861" ignored="false" />
+    <file path="/main.scss" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1363224626006" ignored="false" />
+    <file path="/dummy.xml" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1363224574350" ignored="false" />
+    <file path="/app.html" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1364239843834" ignored="false" />
+    <file path="/directives.js" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1364334161531" ignored="false" />
+    <file path="/main.js" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1364332001835" ignored="false" />
+    <file path="/conflictProperty.html" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1364324781344" ignored="false" />
+    <file path="/conflict-field.html" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1362892679845" ignored="false" />
+    <file path="/conflictModel.html" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1363034744581" ignored="false" />
+    <file path="/conflictModelField.html" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1363042231352" ignored="false" />
+    <file path="/controllers.js" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1364335910897" ignored="false" />
+    <file path="/services.js" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1364406351945" ignored="false" />
+    <file path="/conflictModelRow.html" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1363209109782" ignored="false" />
+    <file path="/fragment.js2" changelist="a9e04aec-85aa-4999-b7ad-b895876a2023" time="1363024925117" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +60,7 @@
       <file leaf-file-name="controllers.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="7" selection-start="3171" selection-end="3171" vertical-scroll-proportion="0.0">
+            <state line="12" column="19" selection-start="495" selection-end="495" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -75,28 +75,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="list.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/partials/list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="44" selection-start="412" selection-end="412" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="categories.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/partials/categories.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="14" selection-start="527" selection-end="527" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/app.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="6" selection-start="125" selection-end="125" vertical-scroll-proportion="0.0">
+            <state line="13" column="6" selection-start="473" selection-end="473" vertical-scroll-proportion="0.36862004">
               <folding />
             </state>
           </provider>
@@ -129,10 +111,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="posting.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="posting.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/partials/posting.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="6" selection-start="198" selection-end="198" vertical-scroll-proportion="0.12650603">
+            <state line="19" column="6" selection-start="602" selection-end="602" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/styles/main.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="144" column="0" selection-start="2027" selection-end="2027" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -142,6 +133,15 @@
         <entry file="file://$PROJECT_DIR$/scripts/dev.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="58" column="0" selection-start="4221" selection-end="4221" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/app.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="6" selection-start="125" selection-end="125" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -157,7 +157,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/views/ok/okProperty.html" />
         <option value="$PROJECT_DIR$/views/new/newProperty.html" />
         <option value="$PROJECT_DIR$/views/partials/propertyDetails.html" />
         <option value="$PROJECT_DIR$/views/raw/raw.html" />
@@ -167,20 +166,20 @@
         <option value="$PROJECT_DIR$/scripts/directives.js" />
         <option value="$PROJECT_DIR$/views/app.html" />
         <option value="$PROJECT_DIR$/views/partials/categories.html" />
-        <option value="$PROJECT_DIR$/views/partials/list.html" />
         <option value="$PROJECT_DIR$/scripts/services.js" />
         <option value="$PROJECT_DIR$/scripts/app.js" />
-        <option value="$PROJECT_DIR$/scripts/controllers.js" />
         <option value="$PROJECT_DIR$/scripts/dev.js" />
+        <option value="$PROJECT_DIR$/styles/main.scss" />
+        <option value="$PROJECT_DIR$/scripts/controllers.js" />
         <option value="$PROJECT_DIR$/views/partials/posting.html" />
+        <option value="$PROJECT_DIR$/views/partials/list.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1280" />
-    <option name="y" value="-623" />
+    <option name="y" value="22" />
     <option name="width" value="1280" />
-    <option name="height" value="1024" />
+    <option name="height" value="723" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -196,7 +195,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+    <navigator proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -207,89 +206,7 @@
       <autoscrollFromSource />
       <sortByType />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="partials" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
@@ -298,9 +215,9 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../app/build/dev" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="GoToClass.includeJavaFiles" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -349,8 +266,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1280" y="-623" width="1280" height="1024" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="22" width="1280" height="723" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -424,11 +341,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scripts/lib/angular-ui/angular-ui.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="770" column="21" selection-start="27618" selection-end="27621" vertical-scroll-proportion="-10.423077" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template/tabs/tabs.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="38" selection-start="238" selection-end="238" vertical-scroll-proportion="0.1056338" />
@@ -441,21 +353,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/compass_twitter_bootstrap/_navs.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="269" column="0" selection-start="5154" selection-end="5154" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="269" column="0" selection-start="5154" selection-end="5154" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/directives.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="27" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="2" column="27" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/partials/categories.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="14" selection-start="527" selection-end="527" vertical-scroll-proportion="0.0">
+        <state line="13" column="14" selection-start="527" selection-end="527" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="53" selection-start="53" selection-end="53" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/requirejs/tests/jquery/scripts/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="144" column="0" selection-start="2027" selection-end="2027" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -467,16 +392,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/partials/list.html">
+    <entry file="file://$PROJECT_DIR$/scripts/dev.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="44" selection-start="412" selection-end="412" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="53" selection-start="53" selection-end="53" vertical-scroll-proportion="0.0">
+        <state line="58" column="0" selection-start="4221" selection-end="4221" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -495,13 +413,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/requirejs/tests/jquery/scripts/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="40" selection-start="871" selection-end="871" vertical-scroll-proportion="0.0">
@@ -511,21 +422,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="7" selection-start="3171" selection-end="3171" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/dev.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="0" selection-start="4221" selection-end="4221" vertical-scroll-proportion="0.0">
+        <state line="12" column="19" selection-start="495" selection-end="495" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/partials/posting.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="6" selection-start="198" selection-end="198" vertical-scroll-proportion="0.12650603">
+        <state line="19" column="6" selection-start="602" selection-end="602" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/partials/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="6" selection-start="473" selection-end="473" vertical-scroll-proportion="0.36862004">
           <folding />
         </state>
       </provider>

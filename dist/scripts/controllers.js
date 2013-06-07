@@ -8,6 +8,9 @@ angular.module('technifieds.app').
 
             Categories.queryCategories().then(function(result){
                 $scope.categories = result.data;
+                angular.forEach($scope.categories, function(category) {
+                    category.selected = false;
+                });
                 $scope.categories[0].selected = true;
                 $scope.category = $scope.categories[0];
             });
